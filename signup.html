@@ -261,146 +261,178 @@
       <!-- LOGIN SECTION START -->
       <section
         class="container mx-auto px-[15px] xl:max-w-[1200px] py-8 mt-24 flex flex-col items-center">
-        <!-- SECTION HEADING -->
-        <div class="py-8">
-          <h1
-            class="text-3xl md:text-4xl tracking-tight font-bold font-['Roboto'] my-2 max-w-2xl">
-            Log in to your account
-          </h1>
-        </div>
-
-        <!-- LOGIN FORM -->
-        <div class="max-w-md w-full pb-20 mx-auto">
-          <form class="pb-6 border-b border-[#0000001f]">
-            <!-- CONTINUE WITH GOOGLE -->
-            <div
-              class="flex relative pb-6 border-b border-[#0000001f] mb-4">
-              <a
-                href="#"
-                class="drop-shadow-lg z-10 before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-white before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all before:duration-300 transition-all duration-300 leading-none px-[20px] py-[15px] uppercase font-medium text-white hover:text-[#ff0020] block text-[14px] xl:text-[16px] relative after:block after:absolute after:inset-0 after:-z-[2] after:bg-[#ff0020] after:transition-all border border-[#ff0020] hover:border-[#ff0020] basis-full text-center">
-                <span
-                  class="absolute top-1/2 -translate-y-1/2 left-2">
-                  <img
-                    src="images/google.svg"
-                    alt="Google" />
-                </span>
-                Continue with google
-              </a>
-              <span
-                class="text-lg font-semibold leading-3 absolute bottom-0 translate-y-1/2 -translate-x-1/2 left-1/2 px-4 bg-white"
-                >or</span
-              >
+        <!-- GRID BOX -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full">
+          <div>
+            <!-- SECTION HEADING -->
+            <div class="py-8">
+              <h1
+                class="text-3xl md:text-4xl tracking-tight font-bold font-['Roboto'] my-2 max-w-2xl">
+                Get the best deal on your new car
+              </h1>
+              <p class="text-[#0000009e] text-lg max-w-2xl">
+                Get great offers, news, and advice from us and our
+                dealer and manufacturer partners by subscribing to our
+                free service.
+              </p>
             </div>
-            <!-- EMAIL -->
-            <div class="flex flex-col mb-2">
-              <label
-                for="email"
-                class="text-base mb-1 text-[#000000de]"
-                >Email</label
-              >
-              <div class="relative">
-                <label
-                  for="email"
-                  class="absolute top-1/2 -translate-y-1/2 px-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                  </svg>
-                </label>
-                <input
-                  type="email"
-                  required
-                  class="py-2 px-4 pl-12 w-full text-lg font-normal text-[#000000de] border border-[#0000001f] rounded-md outline-[#ff0020] transition-all hover:border-black"
-                  id="email"
-                  placeholder="Enter email" />
-              </div>
-            </div>
-            <!-- PASSWORD -->
-            <div class="flex flex-col mb-2">
-              <label
-                for="password"
-                class="text-base mb-1 text-[#000000de]"
-                >Password</label
-              >
-              <div class="relative">
-                <label
-                  for="password"
-                  class="absolute top-1/2 -translate-y-1/2 px-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-                  </svg>
-                </label>
-                <input
-                  type="password"
-                  placeholder="Enter Password"
-                  required
-                  class="py-2 px-4 pl-12 w-full text-lg font-normal text-[#000000de] border border-[#0000001f] rounded-md outline-[#ff0020] transition-all hover:border-black"
-                  id="password" />
-              </div>
-            </div>
-            <!-- REMEMBER ME -->
-            <div class="block text-base text-[#0000009e] my-3">
-              <div class="relative w-full flex">
-                <input
-                  type="checkbox"
-                  name="remember"
-                  id="remember"
-                  value="remember"
-                  class="absolute h-6 w-6 bg-white rounded cursor-pointer ml-3 top-1/2 -translate-y-1/2 inline-block peer checked:accent-[#ff0020]" />
-                <label
-                  for="remember"
-                  class="cursor-pointer peer-checked:text-[#ff0020] peer-checked:border-[#ff0020] peer-checked:bg-[#ff0020]/10 transition-all rounded-md w-full h-full bg-white p-3 pl-11 text-[#000000de]">
+            <!-- LOGIN FORM -->
+            <div class="w-full pb-20 mx-auto">
+              <form class="py-8 px-6 rounded-xl shadow-lg border">
+                <!-- CONTINUE WITH GOOGLE -->
+                <div
+                  class="flex relative pb-6 border-b border-[#0000001f] mb-4">
+                  <a
+                    href="#"
+                    class="drop-shadow-lg z-10 before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-white before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all before:duration-300 transition-all duration-300 leading-none px-[20px] py-[15px] uppercase font-medium text-white hover:text-[#ff0020] block text-[14px] xl:text-[16px] relative after:block after:absolute after:inset-0 after:-z-[2] after:bg-[#ff0020] after:transition-all border border-[#ff0020] hover:border-[#ff0020] basis-full text-center">
+                    <span
+                      class="absolute top-1/2 -translate-y-1/2 left-2">
+                      <img
+                        src="images/google.svg"
+                        alt="Google" />
+                    </span>
+                    Continue with google
+                  </a>
                   <span
-                    class="flex flex-col justify-center items-start text-left">
-                    <span class="text-inherit capitalize select-none"
-                      >Remember me</span
-                    >
-                  </span>
-                </label>
+                    class="text-lg font-semibold leading-3 absolute bottom-0 translate-y-1/2 -translate-x-1/2 left-1/2 px-4 bg-white"
+                    >or</span
+                  >
+                </div>
+                <div class="flex flex-col mb-2">
+                  <label
+                    for="email"
+                    class="text-base mb-1 text-[#000000de]"
+                    >Email</label
+                  >
+                  <div class="relative">
+                    <label
+                      for="email"
+                      class="absolute top-1/2 -translate-y-1/2 px-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      </svg>
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      class="py-2 px-4 pl-12 w-full text-lg font-normal text-[#000000de] border border-[#0000001f] rounded-md outline-[#ff0020] transition-all hover:border-black"
+                      id="email"
+                      placeholder="Enter email" />
+                  </div>
+                </div>
+                <span class="block text-sm text-[#0000009e] mb-5">
+                  (We won't share it with dealers or manufacturers)
+                </span>
+                <div class="flex">
+                  <button
+                    class="drop-shadow-lg z-10 before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-white before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all before:duration-300 transition-all duration-300 leading-none px-[20px] py-[15px] uppercase font-medium text-white hover:text-[#ff0020] block text-[14px] xl:text-[16px] relative after:block after:absolute after:inset-0 after:-z-[2] after:bg-[#ff0020] after:transition-all border border-[#ff0020] hover:border-[#ff0020] basis-full text-center">
+                    Find deals!
+                  </button>
+                </div>
+                <p class="text-[#0000009e] text-base max-w-2xl mt-5">
+                  By proceeding you agree to our
+                  <a
+                    href="#"
+                    class="text-[#ff0020] underline"
+                    >T&Cs</a
+                  >
+                  and confirm you have read our
+                  <a
+                    href="#"
+                    class="text-[#ff0020] underline"
+                    >Privacy policy</a
+                  >. You can opt-out of these emails and stop this
+                  service at any time.
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center">
+            <!-- ILLUSTRATION -->
+            <div class="flex items-center justify-center md:px-14">
+              <img
+                src="images/house_smiley.svg"
+                alt="" />
+            </div>
+            <!-- POINTS -->
+            <div class="font-['Roboto'] mt-14 md:px-14">
+              <div
+                class="text-lg leading-7 text-[#000000de] flex items-center mb-9">
+                <h2 class="font-bold text-lg lg:text-xl">
+                  Sell your car fast and get paid the same day
+                </h2>
               </div>
+              <ul class="flex flex-col gap-7">
+                <li
+                  class="text-lg leading-7 text-[#000000de] flex items-center">
+                  <span
+                    class="flex items-center justify-center bg-[#03a561] mr-2 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="w-4 h-4 fill-white">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <h3 class="font-bold text-base md:text-lg">
+                    Get offers on a new car built to your
+                    specification
+                  </h3>
+                </li>
+                <li
+                  class="text-lg leading-7 text-[#000000de] flex items-center">
+                  <span
+                    class="flex items-center justify-center bg-[#03a561] mr-2 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="w-4 h-4 fill-white">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <h3 class="font-bold text-base md:text-lg">
+                    Beat the queues with readily available cars in
+                    stock
+                  </h3>
+                </li>
+                <li
+                  class="text-lg leading-7 text-[#000000de] flex items-center">
+                  <span
+                    class="flex items-center justify-center bg-[#03a561] mr-2 rounded-full p-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="w-4 h-4 fill-white">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <h3 class="font-bold text-base md:text-lg">
+                    Free part-exchange valuation of your current car
+                  </h3>
+                </li>
+              </ul>
             </div>
-            <!-- LOGIN BUTTON -->
-            <div class="flex">
-              <button
-                type="submit"
-                class="drop-shadow-lg z-10 before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-white before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all before:duration-300 transition-all duration-300 leading-none px-[20px] py-[15px] uppercase font-medium text-white hover:text-[#ff0020] block text-[14px] xl:text-[16px] relative after:block after:absolute after:inset-0 after:-z-[2] after:bg-[#ff0020] after:transition-all border border-[#ff0020] hover:border-[#ff0020] basis-full text-center">
-                Log in
-              </button>
-            </div>
-            <!-- FORGET PASSWORD LINK -->
-            <div class="text-[#0000009e] text-lg text-center mt-5">
-              <a
-                href="#"
-                class="text-[#ff0020] underline">
-                Forget password?
-              </a>
-            </div>
-          </form>
-          <!-- SIGN UP LINK -->
-          <div class="text-[#0000009e] text-lg text-center mt-5">
-            Don't have an account?
-            <a
-              href="signup.html"
-              class="text-[#ff0020] underline">
-              Sign up
-            </a>
           </div>
         </div>
       </section>
